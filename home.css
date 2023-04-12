@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #ECECEC;
+    margin-bottom: 10px;
+}
+
+.section-carrusel {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.slide {
+    height: 25em;
+    overflow: hidden;
+}
+
+
+.img-logo {
+    width: 5rem
+}
+
+.nav-link {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+.nav-link li a{
+    text-decoration: none;
+    color: blueviolet;
+}
+.nav-link li a:hover{
+    color: white;
+}
+/* clases para abrir el menu hamburguesa y cerrarlo */
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+/* ----------------------------------------------------*/
+
+
+
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+    background-color: hsl(0, 0%, 97%);
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+}
+
+
+
+.section-b {
+    display: flex;
+    height: 500px;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.article-a {
+    width: 25em;
+    background-image: linear-gradient(rgba(4, 4, 4, 0.5),rgba(4, 4, 4, 0.5)), url('img/ropa-deportiva.jpg');
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.parrafo {
+    color: #fff;
+}
+
+.article-b{
+    width: 25em;
+    background-image: linear-gradient(rgba(4, 4, 4, 0.5),rgba(4, 4, 4, 0.5)), url('img/talle-inclusivo.jpg');
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.article-c {
+    width: 25em;
+    background-image: linear-gradient(rgba(4, 4, 4, 0.5),rgba(4, 4, 4, 0.5)), url('img/ofertas.jpg');
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    background-color: black;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+.info {
+    border: 1px solid red;
+    padding-bottom: 0;
+}
+.img {
+    width: 8em;
+    height: 12em;
+}
+.img img {
+    width: 100%;
+}
+
+footer {
+    background-color: hsla(0, 1%, 58%, 0.8);
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    padding: 1em;
+}
+.terminos p:hover {
+    /* background-color: yellow; */
+    color: #ECECEC;
+    cursor: pointer;
+}
+.redes li{
+    /* background-color: aqua; */
+    list-style-type: none;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.redes li:hover {
+    color: #ECECEC;
+}
+
+.sucursales {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #fff; */
+}
+.sucursales a {
+    text-decoration: none;
+    color: #1B1B1B;
+    cursor: pointer;
+}
+
+.sucursales a:hover {
+    color: #ECECEC;
+}
+
+
+ @media (max-width: 450px){
+        .abrir-menu,
+        .cerrar-menu {
+            display: block;
+            border: 0;
+            font-size: 1.25rem;
+            background-color: transparent;
+            cursor: pointer;
+        } 
+    
+        .abrir-menu {
+            color: #1c1c1c;
+        }
+    
+        .cerrar-menu {
+            color: #ECECEC;
+        }
+    
+        
+        .nav {
+            opacity: 0;
+            visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 1rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #1B1B1B;
+            padding: 2rem;
+            box-shadow: 0 0 0 100vmax rgba(0,0,0, .5);
+        }
+    
+        .nav.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+    
+        .link {
+            flex-direction: column;
+            align-items: end;
+        }
+    
+        .link li a {
+            color: #ECECEC;
+        }
+}
