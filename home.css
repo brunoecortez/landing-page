@@ -116,14 +116,6 @@ header {
     color: #fff;
 }
 
-
-
-
-
-
-
-
-
 .info {
     border: 1px solid red;
     padding-bottom: 0;
@@ -139,15 +131,11 @@ header {
 footer {
     background-color: hsla(0, 1%, 58%, 0.8);
     display: flex;
-    justify-content: center;
-    gap: 5em;
+    margin-top: 20px;
     padding: 1em;
+    justify-content: space-around;
 }
-.terminos p:hover {
-    /* background-color: yellow; */
-    color: #ECECEC;
-    cursor: pointer;
-}
+
 .redes li{
     /* background-color: aqua; */
     list-style-type: none;
@@ -162,6 +150,7 @@ footer {
 .sucursales {
     display: flex;
     flex-direction: column;
+    text-align: left;
     /* background-color: #fff; */
 }
 .sucursales a {
@@ -173,7 +162,9 @@ footer {
 .sucursales a:hover {
     color: #ECECEC;
 }
-
+.sucursales ul li{
+    list-style-type: none;
+}
 
  @media (max-width: 450px){
         .abrir-menu,
@@ -223,4 +214,6 @@ footer {
         .link li a {
             color: #ECECEC;
         }
+
+        
 }
