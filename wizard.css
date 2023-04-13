@@ -1,0 +1,51 @@
+/* Estilo del formulario */
+
+#regForm {
+    background-color: #dedfff;
+    margin: 100px auto;
+    padding: 40px;
+    width: 50%;
+    min-width: 300px;
+    
+  }
+  
+  /* Estilo de los inputs */
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+  }
+  
+  /*Error de validación*/
+  input.invalid {
+    background-color: #f8c2c2;
+  }
+  
+  /* Ocultar todos los pasos por defecto*/
+  .tab {
+    display: none;
+  }
+  
+  /* Círculos que indican los pasos del formularop*/
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  /* Círculos activos */
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Pasos terminados y válidos */
+  .step.finish {
+    background-color: #04AA6D;
+  }
