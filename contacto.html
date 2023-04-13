@@ -1,25 +1,184 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="home.css">
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="contacto.css" />
+    <link rel="stylesheet" href="home.css"/>
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <title>Contacto</title>
+  </head>
+  
+  <body>
     <header>
-        <img class="img-logo" src="img/logo.jpg" alt="logo">
-        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
-        <nav class="nav" id="nav">
-          <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></i></button>
-          <ul class="nav-link">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="contacto.html">Contactos</a></li>
-          </ul>
-        </nav>
+      <img class="img-logo" src="img/SamfitLogo.png" alt="logo">
+      <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+      <nav class="nav" id="nav">
+        <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></i></button>
+        <ul class="nav-link">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contactos</a></li>
+        </ul>
+      </nav>
     </header>
-</body>
+    <br>
+    
+    <div class="container">
+      <h2>Contactanos</h2>
+      <form class="row g-2 mt-3">
+        <div class="col-12">
+          <label for="inputName" class="form-label">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputName"
+            placeholder="Escribe tu nombre"
+          />
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4">
+          <label for="emailInput" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="emailInput"
+            placeholder="Escribe tu email"
+          />
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <label for="inputPhone" class="form-label">Telefono</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputPhone"
+            placeholder="Escribe tu numero"
+          />
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <label for="inputState" class="form-label">Provincia</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputState"
+            placeholder="Escribe tu Provincia"
+          />
+        </div>
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Consulta</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input
+              type="checkbox"
+              id="checkTerms"
+              class="form-check-input"
+              checked
+            />
+            <label for="checkTerms" class="form-check-label">Deseo recibir información de sus productos y promociones</label
+            >
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+
+      </form>
+      
+      <br>
+      <h2>Mas información</h2>
+    <br>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.4871522597264!2d-65.23844298441216!3d-26.82445369599088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c5f05fea9cf%3A0x3e4ee2848363f1ae!2sAv.%20Mate%20de%20Luna%202550%2C%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1670608057839!5m2!1ses!2sar"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <br />
+    <br>
+    <p>
+      <img src="./img/Direccion.png" alt="error" id="icon" />Mate de luna
+      2550,Tucuman,Argentina.
+    </p>
+    <br />
+    <p><img src="./img/Email.png" alt="error" id="icon"/>tiendaderopa@gmail.com</p>
+    <br />
+    <p><img src="./img/Telefono.png" alt="error" id="icon" />+54-0381-156220033</p>
+    <br />
+
+
+    </div>
+    <footer class="footer">
+
+      <div class="terminos">
+        <p>Politica de privacidad</p>
+        <p>Terminos y condiciones</p>
+        <p>Politica de cookies</p>
+      </div>
+  
+      <div class="Preguntas">
+        <p>Necesitas Ayuda</p>
+        <p>Preguntas frecuentes</p>
+        <p>Formas de envio</p>
+        <p>Formas de pago</p>
+        </div>
+  
+      <div class="redes">
+        <ul>
+          <li><a href="https://www.facebook.com/profile.php?id=100085155483835" target="_blank"><i class="bi bi-facebook"></i></a></li> 
+          <li><a href="https://www.instagram.com/samfit.ar/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="https://api.whatsapp.com/send/?phone=5491123948728&text&type=phone_number&app_absent=0" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+        </ul>
+      </div>
+  
+      <div class="sucursales">
+          <ul>
+          <li>Sucursales</li>
+          <li><a href="https://goo.gl/maps/cUYeYowxVqUUxA2c8" target="_blank">Lomas de Zamora</a></li>
+          <li><a href="https://goo.gl/maps/HqWWzN3mBgmNzkge7" target="_blank">Catamarca</a></li>
+          <li><a href="https://goo.gl/maps/Fh8sHr8W1evoJN95A" target="_blank">Shopping Catamarca</a></li>
+          <li><a href="https://goo.gl/maps/Z4siKTdKMdyUGWCp8" target="_blank">Cordoba</a></li>
+        </ul>
+      </div>
+  
+      
+  
+  
+    </footer>
+    
+    
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  </body>
 </html>
+
