@@ -30,53 +30,49 @@
     <div class="container mt-4 card-container">
 
         <!-- List Order -->
-
-        <div class="d-flex row justify-content-end">
-            <div class="d-flex col-6 col-md-2">
-                <div class="input-group">
-                    <label class="input-group-text" for=""><i class="bi bi-arrow-down-up"></i></label>
-                    <select class="form-select" aria-label="Filter select">
-                        <option selected>Ordenar por:</option>
-                        <option value="price-ascending">Precio: Menor a Mayor</option>
-                        <option value="price-descending">Precio: Mayor a Menor</option>
-                        <option value="alpha-ascending">A - Z</option>
-                        <option value="alpha-descending">Z - A</option>
-                        <option value="created-descending">Más Nuevo al más Viejo</option>
-                        <option value="created-ascending">Más Viejo al más Nuevo</option>
-                        <option value="best-selling">Más Vendidos</option>
-                    </select>
+        <section class="menu-bar">
+            <div class="d-flex row justify-content-end">
+                <div class="d-flex col-6 col-md-3">
+                    <div class="input-group">
+                        <label class="input-group-text" for=""><i class="bi bi-arrow-down-up"></i></label>
+                        <select class="form-select sort-by" aria-label="Filter select">
+                            <option selected disabled>Ordenar por:</option>
+                            <option value="price-ascending">Precio: Menor a Mayor</option>
+                            <option value="price-descending">Precio: Mayor a Menor</option>
+                        </select>
+                    </div>
                 </div>
             </div>
-        </div>
 
 
-        <!-- Filters -->
-        <div class="d-flex row justify-content-start"></div>
-        <div class="d-flex col-6 col-md-3 boton-container">
-            <button class="btn-lg" for=""><i class="bi bi-arrow-left-right"></i></button>
-            <nav class="sidebar">
-                <!-- <nav class="sidebar"> -->
-                <div class="type-product">Categorias</div>
-                <ul class="category_list">
-                    <li class="category_item" category="all"><a href="#" id="1">Todo</a></li>
-                    <li class="category_item" category="calzas"><a href="#" id="1">Calzas</a></li>
-                    <li class="category_item" category="musculosas"><a href="#" id="1">Musculosas</a></li>
-                    <li class="category_item" category="polleras"><a href="#" id="1">Polleras</a></li>
-                    <li class="category_item" category="accesorios"><a href="#" id="1">Accesorios</a></li>
-                </ul>
-            </nav>
-            <div class="content">
-                <div class="header"></div>
+            <!-- Filters -->
+            <div class="d-flex row justify-content-start"></div>
+            <div class="d-flex col-6 col-md-3 boton-container">
+                <button class="btn-lg" for=""><i class="bi bi-arrow-left-right"></i></button>
+                <nav class="sidebar">
+                    <!-- <nav class="sidebar"> -->
+                    <div class="type-product">Categorias</div>
+                    <ul class="category_list">
+                        <li class="category_item" category="all"><a href="#" id="1">Todo</a></li>
+                        <li class="category_item" category="calzas"><a href="#" id="1">Calzas</a></li>
+                        <li class="category_item" category="musculosas"><a href="#" id="1">Musculosas</a></li>
+                        <li class="category_item" category="polleras"><a href="#" id="1">Polleras</a></li>
+                        <li class="category_item" category="accesorios"><a href="#" id="1">Accesorios</a></li>
+                    </ul>
+                </nav>
+                <div class="content">
+                    <div class="header"></div>
+                </div>
             </div>
-        </div>
+        </section>
 
         <section id="product1" class="section-p1">
-            <div class="row">
+            <div class="row product_list">
                 <!-- Card-Products -->
                 <!-- Calzas -->
-                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center">
+                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
                     <div class="product-item" category="calzas">
-                        <div class="card w-auto" style="width: 70%">
+                        <div class="card w-auto product-card" data-price="7000" style="width: 70%">
                             <div class="image-container">
         
                                 <div class="first">
@@ -99,23 +95,25 @@
                                     </h5>
         
                                     <div class="d-flex flex-column mb-2">
+                                        <span class="list-price"></span>
                                         <span class="new-price">$6.300</span>
                                         <small class="old-price text-right">$7.000</small>
                                     </div>
                                 </div>
         
                                 <div class="d-flex justify-content-between align-items-center pt-1">
-                                    <button class="w-100 p-2 d-block custom-btn"><i class="bi bi-cart-plus"></i>
-                                        Comprar</button>
+                                    <button name="redirect" class="w-100 p-2 d-block custom-btn" onclick="redirect()"><i
+                                        class="bi bi-cart-plus"></i> Comprar
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
         
-                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center">
+                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
                     <div class="product-item" category="calzas">
-                        <div class="card w-auto" style="width: 70%">
+                        <div class="card w-auto product-card" data-price="7000" style="width: 70%">
                             <div class="image-container">
         
                                 <div class="first">
@@ -138,23 +136,25 @@
                                     </h5>
         
                                     <div class="d-flex flex-column mb-2">
+                                        <span class="list-price"></span>
                                         <span class="new-price">$6.300</span>
                                         <small class="old-price text-right">$7.000</small>
                                     </div>
                                 </div>
         
                                 <div class="d-flex justify-content-between align-items-center pt-1">
-                                    <button class="w-100 p-2 d-block custom-btn"><i class="bi bi-cart-plus"></i>
-                                        Comprar</button>
+                                    <button name="redirect" class="w-100 p-2 d-block custom-btn" onclick="redirect()"><i
+                                        class="bi bi-cart-plus"></i> Comprar
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
         
-                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center">
+                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
                     <div class="product-item" category="calzas">
-                        <div class="card w-auto" style="width: 70%">
+                        <div class="card w-auto product-card" data-price="8900" style="width: 70%">
                             <div class="image-container">
         
                                 <div class="first">
@@ -184,17 +184,18 @@
                                 </div>
         
                                 <div class="d-flex justify-content-between align-items-center pt-1">
-                                    <button class="w-100 p-2 d-block custom-btn"><i class="bi bi-cart-plus"></i>
-                                        Comprar</button>
+                                    <button name="redirect" class="w-100 p-2 d-block custom-btn" onclick="redirect()"><i
+                                        class="bi bi-cart-plus"></i> Comprar
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
         
-                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center">
+                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
                     <div class="product-item" category="calzas">
-                        <div class="card w-auto" style="width: 70%">
+                        <div class="card w-auto product-card" data-price="8900" style="width: 70%">
                             <div class="image-container">
         
                                 <div class="first">
@@ -224,17 +225,18 @@
                                 </div>
         
                                 <div class="d-flex justify-content-between align-items-center pt-1">
-                                    <button class="w-100 p-2 d-block custom-btn"><i class="bi bi-cart-plus"></i>
-                                        Comprar</button>
+                                    <button name="redirect" class="w-100 p-2 d-block custom-btn" onclick="redirect()"><i
+                                        class="bi bi-cart-plus"></i> Comprar
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
         
-                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center">
+                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
                     <div class="product-item" category="calzas">
-                        <div class="card w-auto" style="width: 70%">
+                        <div class="card w-auto product-card" data-price="8900" style="width: 70%">
                             <div class="image-container">
         
                                 <div class="first">
@@ -264,17 +266,18 @@
                                 </div>
         
                                 <div class="d-flex justify-content-between align-items-center pt-1">
-                                    <button class="w-100 p-2 d-block custom-btn"><i class="bi bi-cart-plus"></i>
-                                        Comprar</button>
+                                    <button name="redirect" class="w-100 p-2 d-block custom-btn" onclick="redirect()"><i
+                                        class="bi bi-cart-plus"></i> Comprar
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
         
-                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center">
+                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
                     <div class="product-item" category="calzas">
-                        <div class="card w-auto" style="width: 70%">
+                        <div class="card w-auto product-card" data-price="7000" style="width: 70%">
                             <div class="image-container">
         
                                 <div class="first">
@@ -304,17 +307,18 @@
                                 </div>
         
                                 <div class="d-flex justify-content-between align-items-center pt-1">
-                                    <button class="w-100 p-2 d-block custom-btn"><i class="bi bi-cart-plus"></i>
-                                        Comprar</button>
+                                    <button name="redirect" class="w-100 p-2 d-block custom-btn" onclick="redirect()"><i
+                                        class="bi bi-cart-plus"></i> Comprar
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
         
-                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center">
+                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
                     <div class="product-item" category="calzas">
-                        <div class="card w-auto" style="width: 70%">
+                        <div class="card w-auto product-card" data-price="10500" style="width: 70%">
                             <div class="image-container">
         
                                 <div class="first">
@@ -352,9 +356,9 @@
                     </div>
                 </div>
         
-                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center">
+                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
                     <div class="product-item" category="calzas">
-                        <div class="card w-auto" style="width: 70%">
+                        <div class="card w-auto product-card" data-price="10700" style="width: 70%">
                             <div class="image-container">
         
                                 <div class="first">
@@ -384,17 +388,18 @@
                                 </div>
         
                                 <div class="d-flex justify-content-between align-items-center pt-1">
-                                    <button class="w-100 p-2 d-block custom-btn"><i class="bi bi-cart-plus"></i>
-                                        Comprar</button>
+                                    <button name="redirect" class="w-100 p-2 d-block custom-btn" onclick="redirect()"><i
+                                        class="bi bi-cart-plus"></i> Comprar
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
         
-                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center">
+                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
                     <div class="product-item" category="calzas">
-                        <div class="card w-auto" style="width: 70%">
+                        <div class="card w-auto product-card" data-price="10700" style="width: 70%">
                             <div class="image-container">
         
                                 <div class="first">
@@ -424,17 +429,18 @@
                                 </div>
         
                                 <div class="d-flex justify-content-between align-items-center pt-1">
-                                    <button class="w-100 p-2 d-block custom-btn"><i class="bi bi-cart-plus"></i>
-                                        Comprar</button>
+                                    <button name="redirect" class="w-100 p-2 d-block custom-btn" onclick="redirect()"><i
+                                        class="bi bi-cart-plus"></i> Comprar
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
         
-                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center">
+                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
                     <div class="product-item" category="calza">
-                        <div class="card w-auto" style="width: 70%">
+                        <div class="card w-auto product-card" data-price="10700" style="width: 70%">
                             <div class="image-container">
         
                                 <div class="first">
@@ -464,17 +470,18 @@
                                 </div>
         
                                 <div class="d-flex justify-content-between align-items-center pt-1">
-                                    <button class="w-100 p-2 d-block custom-btn"><i class="bi bi-cart-plus"></i>
-                                        Comprar</button>
+                                    <button name="redirect" class="w-100 p-2 d-block custom-btn" onclick="redirect()"><i
+                                        class="bi bi-cart-plus"></i> Comprar
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
         
-                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center">
+                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
                     <div class="product-item" category="calza">
-                        <div class="card w-auto" style="width: 70%">
+                        <div class="card w-auto product-card" data-price="10700" style="width: 70%">
                             <div class="image-container">
         
                                 <div class="first">
@@ -504,17 +511,18 @@
                                 </div>
         
                                 <div class="d-flex justify-content-between align-items-center pt-1">
-                                    <button class="w-100 p-2 d-block custom-btn"><i class="bi bi-cart-plus"></i>
-                                        Comprar</button>
+                                    <button name="redirect" class="w-100 p-2 d-block custom-btn" onclick="redirect()"><i
+                                        class="bi bi-cart-plus"></i> Comprar
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
         
-                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center">
+                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
                     <div class="product-item" category="calza">
-                        <div class="card w-auto" style="width: 70%">
+                        <div class="card w-auto product-card" data-price="5300" style="width: 70%">
                             <div class="image-container">
         
                                 <div class="first">
@@ -543,8 +551,9 @@
                                 </div>
         
                                 <div class="d-flex justify-content-between align-items-center pt-1">
-                                    <button class="w-100 p-2 d-block custom-btn"><i class="bi bi-cart-plus"></i>
-                                        Comprar</button>
+                                    <button name="redirect" class="w-100 p-2 d-block custom-btn" onclick="redirect()"><i
+                                        class="bi bi-cart-plus"></i> Comprar
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -552,9 +561,9 @@
                 </div>
         
                 <!-- Musculosas -->
-                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center">
+                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
                     <div class="product-item" category="musculosas">
-                        <div class="card w-auto" style="width: 70%">
+                        <div class="card w-auto product-card" data-price="6300" style="width: 70%">
                             <div class="image-container">
         
                                 <div class="first">
@@ -585,18 +594,18 @@
                                 </div>
         
                                 <div class="d-flex justify-content-between align-items-center pt-1">
-                                    <button class="w-100 p-2 d-block custom-btn"><i class="bi bi-cart-plus"></i>
-                                        Comprar</button>
+                                    <button name="redirect" class="w-100 p-2 d-block custom-btn" onclick="redirect()"><i
+                                        class="bi bi-cart-plus"></i> Comprar
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
         
-                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center">
-                    <div class="product-item" category="musculosas">
-        
-                        <div class="card w-auto" style="width: 70%">
+                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
+                    <div class="product-item" category="musculosas">        
+                        <div class="card w-auto product-card" data-price="6300" style="width: 70%">
                             <div class="image-container">
         
                                 <div class="first">
@@ -626,17 +635,18 @@
                                 </div>
         
                                 <div class="d-flex justify-content-between align-items-center pt-1">
-                                    <button class="w-100 p-2 d-block custom-btn"><i class="bi bi-cart-plus"></i>
-                                        Comprar</button>
+                                    <button name="redirect" class="w-100 p-2 d-block custom-btn" onclick="redirect()"><i
+                                        class="bi bi-cart-plus"></i> Comprar
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
         
-                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center">
+                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
                     <div class="product-item" category="musculosas">
-                        <div class="card w-auto" style="width: 70%">
+                        <div class="card w-auto product-card" data-price="3800" style="width: 70%">
                             <div class="image-container">
         
                                 <div class="first">
@@ -666,17 +676,18 @@
                                 </div>
         
                                 <div class="d-flex justify-content-between align-items-center pt-1">
-                                    <button class="w-100 p-2 d-block custom-btn"><i class="bi bi-cart-plus"></i>
-                                        Comprar</button>
+                                    <button name="redirect" class="w-100 p-2 d-block custom-btn" onclick="redirect()"><i
+                                        class="bi bi-cart-plus"></i> Comprar
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
         
-                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center">
+                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
                     <div class="product-item" category="musculosa">
-                        <div class="card w-auto" style="width: 70%">
+                        <div class="card w-auto product-card" data-price="5900" style="width: 70%">
                             <div class="image-container">
         
                                 <div class="first">
@@ -706,7 +717,9 @@
                                 </div>
         
                                 <div class="d-flex justify-content-between align-items-center pt-1">
-                                    <button class="w-100 p-2 d-block custom-btn"><i class="bi bi-cart-plus"></i>Comprar</button>
+                                    <button name="redirect" class="w-100 p-2 d-block custom-btn" onclick="redirect()"><i
+                                        class="bi bi-cart-plus"></i> Comprar
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -714,9 +727,9 @@
                 </div>
         
                 <!-- Polleras -->
-                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center">
+                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
                     <div class="product-item" category="polleras">
-                        <div class="card w-auto" style="width: 70%">
+                        <div class="card w-auto product-card" data-price="7800" style="width: 70%">
                             <div class="image-container">
         
                                 <div class="first">
@@ -754,9 +767,9 @@
                     </div>
                 </div>
         
-                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center">
+                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
                     <div class="product-item" category="polleras">
-                        <div class="card w-auto" style="width: 70%">
+                        <div class="card w-auto product-card" data-price="7800" style="width: 70%">
                             <div class="image-container">
         
                                 <div class="first">
@@ -787,17 +800,18 @@
                                 </div>
         
                                 <div class="d-flex justify-content-between align-items-center pt-1">
-                                    <button class="w-100 p-2 d-block custom-btn"><i class="bi bi-cart-plus"></i>
-                                        Comprar</button>
+                                    <button name="redirect" class="w-100 p-2 d-block custom-btn" onclick="redirect()"><i
+                                        class="bi bi-cart-plus"></i> Comprar
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center">
+                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
                     <div class="product-item" category="polleras">
-                        <div class="card w-auto" style="width: 70%">
+                        <div class="card w-auto product-card" data-price="7800" style="width: 70%">
                             <div class="image-container">
         
                                 <div class="first">
@@ -828,17 +842,18 @@
                                 </div>
         
                                 <div class="d-flex justify-content-between align-items-center pt-1">
-                                    <button class="w-100 p-2 d-block custom-btn"><i class="bi bi-cart-plus"></i>
-                                        Comprar</button>
+                                    <button name="redirect" class="w-100 p-2 d-block custom-btn" onclick="redirect()"><i
+                                        class="bi bi-cart-plus"></i> Comprar
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center">
+                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
                     <div class="product-item" category="polleras">
-                        <div class="card w-auto" style="width: 70%">
+                        <div class="card w-auto product-card" data-price="7800" style="width: 70%">
                             <div class="image-container">
         
                                 <div class="first">
@@ -869,8 +884,9 @@
                                 </div>
         
                                 <div class="d-flex justify-content-between align-items-center pt-1">
-                                    <button class="w-100 p-2 d-block custom-btn"><i class="bi bi-cart-plus"></i>
-                                        Comprar</button>
+                                    <button name="redirect" class="w-100 p-2 d-block custom-btn" onclick="redirect()"><i
+                                        class="bi bi-cart-plus"></i> Comprar
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -878,9 +894,9 @@
                 </div>
         
                 <!-- Accesorios -->
-                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center">
+                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
                     <div class="product-item" category="accesorios">
-                        <div class="card w-auto" style="width: 70%">
+                        <div class="card w-auto product-card" data-price="2100" style="width: 70%">
                             <div class="image-container">
                 
                                 <div class="first">
@@ -911,17 +927,18 @@
                                 </div>
                 
                                 <div class="d-flex justify-content-between align-items-center pt-1">
-                                    <button class="w-100 p-2 d-block custom-btn"><i class="bi bi-cart-plus"></i>
-                                        Comprar</button>
+                                    <button name="redirect" class="w-100 p-2 d-block custom-btn" onclick="redirect()"><i
+                                        class="bi bi-cart-plus"></i> Comprar
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center">
+                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
                     <div class="product-item" category="accesorios">
-                        <div class="card w-auto" style="width: 70%">
+                        <div class="card w-auto product-card" data-price="2900" style="width: 70%">
                             <div class="image-container">
                 
                                 <div class="first">
@@ -952,17 +969,18 @@
                                 </div>
                 
                                 <div class="d-flex justify-content-between align-items-center pt-1">
-                                    <button class="w-100 p-2 d-block custom-btn"><i class="bi bi-cart-plus"></i>
-                                        Comprar</button>
+                                    <button name="redirect" class="w-100 p-2 d-block custom-btn" onclick="redirect()"><i
+                                        class="bi bi-cart-plus"></i> Comprar
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
         
-                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center">
+                <div class="col-md-3 mt-2 d-flex align-items-stretch justify-content-center grid-item">
                     <div class="product-item" category="accesorios">
-                        <div class="card w-auto" style="width: 70%">
+                        <div class="card w-auto product-card" data-price="3800" style="width: 70%">
                             <div class="image-container">
                 
                                 <div class="first">
@@ -992,7 +1010,8 @@
                                 </div>
                 
                                 <div class="d-flex justify-content-between align-items-center pt-1">
-                                    <button class="w-100 p-2 d-block custom-btn"><i class="bi bi-cart-plus"></i> Comprar
+                                    <button name="redirect" class="w-100 p-2 d-block custom-btn" onclick="redirect()"><i
+                                        class="bi bi-cart-plus"></i> Comprar
                                     </button>
                                 </div>
                             </div>
