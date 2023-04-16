@@ -11,10 +11,25 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-
+    <link rel="stylesheet" href="home.css">
     <title>Solicitud de cotización</title>
   </head>
   <body>
+
+    <header>
+      <div class="logo-container"><img class="img-logo" src="img/SamfitLogo.png" alt="logo"></div>
+      <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+      <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+      <nav class="nav" id="nav">
+        <ul class="nav-link">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <form id="regForm" action="">
       <h2>Solicitud de cotización</h2>
 
@@ -134,5 +149,40 @@
       </div>
       <script src="wizard.js"></script>
     </form>
+
+
+    <footer class="footer">
+
+      <div class="terminos">
+        <p>Politica de privacidad</p>
+        <p>Terminos y condiciones</p>
+        <p>Politica de cookies</p>
+      </div>
+  
+      <div class="Preguntas">
+        <p>Necesitas Ayuda</p>
+        <p>Preguntas frecuentes</p>
+        <p>Formas de envio</p>
+        <p>Formas de pago</p>
+        </div>
+  
+      <div class="redes">
+        <ul>
+          <li><a href="https://www.facebook.com/profile.php?id=100085155483835" target="_blank"><i class="bi bi-facebook"></i></a></li> 
+          <li><a href="https://www.instagram.com/samfit.ar/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="https://api.whatsapp.com/send/?phone=5491123948728&text&type=phone_number&app_absent=0" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+        </ul>
+      </div>
+  
+      <div class="sucursales">
+          <ul>
+          <li>Sucursales</li>
+          <li><a href="https://goo.gl/maps/cUYeYowxVqUUxA2c8" target="_blank">Lomas de Zamora</a></li>
+          <li><a href="https://goo.gl/maps/HqWWzN3mBgmNzkge7" target="_blank">Catamarca</a></li>
+          <li><a href="https://goo.gl/maps/Fh8sHr8W1evoJN95A" target="_blank">Shopping Catamarca</a></li>
+          <li><a href="https://goo.gl/maps/Z4siKTdKMdyUGWCp8" target="_blank">Cordoba</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

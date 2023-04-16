@@ -122,15 +122,16 @@ header {
     display: flex;
     justify-content: space-between;
 }
-.button button {
+.button a {
     background-color: black;
     color: #ECECEC;
     padding: 10px;
     border-radius: 5px;
     border: 0;
     font-weight: bold;
+    text-decoration: none;
 }
-.button button:hover {
+.button a:hover {
     background-color: #F99148;
 }
 
