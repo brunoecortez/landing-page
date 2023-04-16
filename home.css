@@ -36,6 +36,11 @@ header {
     overflow: hidden;
     border-radius: 10px;
 }
+.prevnext{
+    background-color: #1B1B1B;
+    border-radius: 50px;
+    margin: 5px;
+}
 
 .logo-container{
     /* border: 2px solid blue; */
@@ -181,12 +186,18 @@ header {
     justify-content: center;
 }
 
-.btn {
-    background-color: black;
-    color: #fff;
+.botones{
+    background-color: #1B1B1B;
+    color: #F5F3F3;
+    padding: 10px;
+    border-radius: 25px;
+    font-weight: normal;
+    border: 0;
 }
 
-
+.botones:hover{
+    background-color: black;
+}
 .img {
     width: 8em;
     height: 12em;
@@ -259,6 +270,19 @@ footer {
 }
 .redes li:hover {
     color: #ECECEC;
+}
+.pepe{
+    background-color: red
+    
+}
+.relative{
+    position: relative;
+
+}
+.absolute{
+    position: absolute;
+    top: 5px;
+    right: 0;
 }
 
 .sucursales {
