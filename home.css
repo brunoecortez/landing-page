@@ -123,7 +123,7 @@ header {
     justify-content: space-between;
 }
 .button a {
-    background-color: black;
+    background-color: hsl(0, 0%, 30%);
     color: #ECECEC;
     padding: 10px;
     border-radius: 5px;
@@ -132,7 +132,7 @@ header {
     text-decoration: none;
 }
 .button a:hover {
-    background-color: #F99148;
+    background-color: black;
 }
 
 
@@ -188,12 +188,13 @@ header {
 }
 
 .botones{
-    background-color: #1B1B1B;
+    background-color: hsl(0, 0%, 30%);
     color: #F5F3F3;
     padding: 10px;
     border-radius: 25px;
     font-weight: normal;
     border: 0;
+    text-decoration: none;
 }
 
 .botones:hover{
@@ -245,7 +246,7 @@ header {
     margin-top: 5px;
     border: 0;
     border-radius: 5px;
-    background-color: #1B1B1B;
+    background-color: hsl(0, 0%, 30%);
     margin-bottom: 1em;
     padding: 10px;
     color: #ECECEC;
@@ -262,39 +263,40 @@ footer {
     color: #ECECEC;
 }
 
+.terminos{
+    color: #999999;
+}
+.preguntas {
+    color: #999999;
+}
+
 .redes li{
-    /* background-color: aqua; */
+    background-color: #506471;
     list-style-type: none;
     margin-bottom: 15px;
     font-size: 1.5em;
     cursor: pointer;
 }
+.redes li a {
+    color: hsl(0, 0%, 60%);
+}
+.redes li a:hover{
+    color: #ECECEC;
+}
 .redes li:hover {
     color: #ECECEC;
 }
-.pepe{
-    background-color: red
-    
-}
-.relative{
-    position: relative;
 
-}
-.absolute{
-    position: absolute;
-    top: 5px;
-    right: 0;
-}
 
 .sucursales {
     display: flex;
     flex-direction: column;
     text-align: left;
-    /* background-color: #fff; */
+    color: #999999;
 }
 .sucursales a {
     text-decoration: none;
-    color: #1B1B1B;
+    color: #999999;
     cursor: pointer;
 }
 
