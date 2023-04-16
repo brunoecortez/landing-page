@@ -24,6 +24,43 @@ $(document).ready(function () {
     
   });
   });
+
+//List Order===========================
+
+$(document).on("change", ".sort-by", function () {
+
+  var sortingMethod = $(this).val();
+
+  if (sortingMethod == 'price-ascending') {
+    sortProductsPriceAscending();
+  } else if (sortingMethod == 'price-descending') {
+    sortProductsPriceDescending();
+  }
+  else {
+    $(".product_list").load(location.href + ".product_list", "");
+  }
+});
+
+function sortProductsPriceAscending() {
+  var gridItems = $('.grid-item');
+  gridItems.sort(function (a, b) {
+    return $('.product-card', a).data("price") - $('.product-card', b).data("price");
+  });
+
+  $(".product_list").append(gridItems);
+}
+  
+function sortProductsPriceDescending() {
+var gridItems = $('.grid-item');
+gridItems.sort(function (a, b) {
+return $('.product-card', b).data("price") - $('.product-card', a).data("price");
+});
+  
+$(".product_list").append(gridItems);
+  
+}
+
+
   
   
   
