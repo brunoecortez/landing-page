@@ -23,7 +23,15 @@ header {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 20px;
+    
 }
+.prevnext{
+    background-color: #1B1B1B;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+
 .slide {
     overflow: hidden;
     border-radius: 10px;
@@ -139,7 +147,7 @@ header {
 
 .article-a {
     width: 25em;
-    background-image: linear-gradient(rgba(4, 4, 4, 0.5),rgba(4, 4, 4, 0.5)), url('img/ropa-deportiva.jpg');
+    background-image: linear-gradient(rgba(4, 4, 4, 0.5),rgba(4, 4, 4, 0.5)), url('img/img1.png');
     background-repeat: no-repeat;
     border-radius: 3px;
     background-size: cover;
@@ -155,7 +163,7 @@ header {
 
 .article-b{
     width: 25em;
-    background-image: linear-gradient(rgba(4, 4, 4, 0.5),rgba(4, 4, 4, 0.5)), url('img/talle-inclusivo.jpg');
+    background-image: linear-gradient(rgba(4, 4, 4, 0.5),rgba(4, 4, 4, 0.5)), url('img/img2.png');
     background-repeat: no-repeat;
     border-radius: 3px;
     background-size: cover;
@@ -167,7 +175,7 @@ header {
 }
 .article-c {
     width: 25em;
-    background-image: linear-gradient(rgba(4, 4, 4, 0.5),rgba(4, 4, 4, 0.5)), url('img/ofertas.jpg');
+    background-image: linear-gradient(rgba(4, 4, 4, 0.5),rgba(4, 4, 4, 0.5)), url('img/img3.png');
     background-repeat: no-repeat;
     border-radius: 3px;
     background-size: cover;
