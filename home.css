@@ -5,16 +5,18 @@
     font-family: sans-serif;
 }
 body {
-    background-color: hwb(35 60% 10%);
+    background-color: #fad4a4;
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
     background-color: #F99148;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 6.5em;
+
 }
 
 .section-carrusel {
@@ -27,27 +29,39 @@ header {
     overflow: hidden;
 }
 
-
+.logo-container{
+    /* border: 2px solid blue; */
+    margin-left: 2em;
+}
 .img-logo {
-    width: 5rem
+    width: 5.5rem
+}
+
+.nav {
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    width: 40%;
 }
 
 .nav-link {
     display: flex;
     list-style-type: none;
-    gap: 1rem;
+    gap: 5rem;
 }
 
-.nav-link li a{
+.nav-link li a {
     text-decoration: none;
-    color: blueviolet;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
 }
 .nav-link li a:hover{
-    color: white;
+    color: #155C84;
 }
 /* clases para abrir el menu hamburguesa y cerrarlo */
-.abrir-menu,
-.cerrar-menu {
+
+.abrir-menu, 
+.cerrar-menu  {
     display: none;
 }
 /* ----------------------------------------------------*/
@@ -58,10 +72,55 @@ header {
 .main {
     width: 80%;
     margin: 0 auto;
-    background-color: hsl(0, 0%, 97%);
     border-radius: 10px;
     box-shadow: 0 0 5px;
+    /* background-color: hsla(5, 0%, 97%, 0.999); */
+    background-color: #F5F3F3;
 }
+
+
+
+.section-a h1 {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    padding-top: 1em;
+    margin-bottom: 1em;
+}
+.section-a p{
+    text-align: justify;
+    width: 45%;
+    margin: 0 auto;
+
+}
+.section-a h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+.button {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.button button {
+    background-color: black;
+    color: #ECECEC;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    font-weight: bold;
+}
+.button button:hover {
+    background-color: #F99148;
+}
+
 
 
 
@@ -119,9 +178,7 @@ header {
     color: #fff;
 }
 
-/* .info {
-    background-color: yellow;
-} */
+
 .img {
     width: 8em;
     height: 12em;
@@ -182,6 +239,7 @@ footer {
     margin-top: 20px;
     padding: 1em;
     justify-content: space-around;
+    color: #ECECEC;
 }
 
 .redes li{
@@ -214,7 +272,11 @@ footer {
     list-style-type: none;
 }
 
- @media (max-width: 450px){
+@media (max-width: 350px) {
+        .section-carrusel {
+            display: none;
+        }
+ 
         .abrir-menu,
         .cerrar-menu {
             display: block;
@@ -222,11 +284,12 @@ footer {
             font-size: 1.25rem;
             background-color: transparent;
             cursor: pointer;
-        } 
+        }  
     
         .abrir-menu {
-            color: #1c1c1c;
-        }
+            /* color: #1c1c1c; */
+            color: white;
+         } 
     
         .cerrar-menu {
             color: #ECECEC;
@@ -234,11 +297,12 @@ footer {
     
         
         .nav {
+            background-color: red;
             opacity: 0;
             visibility: hidden;
             display: flex;
             flex-direction: column;
-            align-items: end;
+            align-items: start;
             gap: 1rem;
             position: absolute;
             top: 0;
@@ -263,5 +327,4 @@ footer {
             color: #ECECEC;
         }
 
-        
-}
+}  
