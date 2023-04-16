@@ -9,15 +9,16 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="home.css">
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="home.css" />
     <title>Solicitud de cotización</title>
   </head>
   <body>
-
     <header>
-      <div class="logo-container"><img class="img-logo" src="img/SamfitLogo.png" alt="logo"></div>
+      <div class="logo-container">
+        <img class="img-logo" src="img/SamfitLogo.png" alt="logo" />
+      </div>
       <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
       <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
       <nav class="nav" id="nav">
@@ -38,31 +39,36 @@
       <div class="tab">
         <div class="mb-3">
           <label class="form-label"><b>Nombre:</b></label>
-          <input type="text" class="form-control" id="nombre" rows="3" required />
+          <input
+            type="text"
+            class="form-control"
+            id="nombre"
+            rows="3"
+            required
+          />
         </div>
         <div class="mb-3">
           <label class="form-label"><b>Apellido:</b></label>
-          <input type="text" class="form-control" id="apellido" required/>
+          <input type="text" class="form-control" id="apellido" required />
         </div>
         <div class="mb-3">
           <label class="form-label"><b>Correo:</b></label>
-          <input type="text" class="form-control" id="correo" required/>
+          <input type="text" class="form-control" id="correo" required />
         </div>
       </div>
 
       <div class="tab">
-        
         <div class="mb-3">
           <label class="form-label"><b>Dirección:</b></label>
-          <input type="text" class="form-control" id="direccion" required/>
+          <input type="text" class="form-control" id="direccion" required />
         </div>
         <div class="mb-3">
           <label class="form-label"><b>Ciudad:</b></label>
-          <input type="text" class="form-control" id="ciudad" required/>
+          <input type="text" class="form-control" id="ciudad" required />
         </div>
         <div class="mb-3">
           <label class="form-label"><b>Provincia:</b></label>
-          <input type="text" class="form-control" id="provincia" required/>
+          <input type="text" class="form-control" id="provincia" required />
         </div>
       </div>
 
@@ -86,29 +92,44 @@
       <div class="tab">
         <div class="mb-3">
           <label class="form-label"><b>RESUMEN</b></label>
-          <br>
+          <br />
 
           <div class="mb-3 row">
-            <label  class="col-sm-2 col-form-label"><b>Nombre:</b></label>
+            <label class="col-sm-2 col-form-label"><b>Nombre:</b></label>
             <div class="col-sm-10">
-              <input type="text" readonly class="form-control-plaintext" id="nombreCompleto">
+              <input
+                type="text"
+                readonly
+                class="form-control-plaintext"
+                id="nombreCompleto"
+              />
             </div>
           </div>
-          <br>
+          <br />
           <div class="mb-3 row">
-            <label  class="col-sm-2 col-form-label"><b>Correo:</b></label>
+            <label class="col-sm-2 col-form-label"><b>Correo:</b></label>
             <div class="col-sm-10">
-              <input type="text" readonly class="form-control-plaintext"  id="mail">
+              <input
+                type="text"
+                readonly
+                class="form-control-plaintext"
+                id="mail"
+              />
             </div>
           </div>
-          <br>
+          <br />
           <div class="mb-3 row">
-            <label  class="col-sm-2 col-form-label"><b>Dirección:</b></label>
+            <label class="col-sm-2 col-form-label"><b>Dirección:</b></label>
             <div class="col-sm-10">
-              <input type="text" readonly class="form-control-plaintext" id="datos">
+              <input
+                type="text"
+                readonly
+                class="form-control-plaintext"
+                id="datos"
+              />
             </div>
           </div>
-          <br>
+          <br />
           <textarea
             class="form-control"
             id="leyenda"
@@ -150,37 +171,67 @@
       <script src="wizard.js"></script>
     </form>
 
-
     <footer class="footer">
-
       <div class="terminos">
         <p>Politica de privacidad</p>
         <p>Terminos y condiciones</p>
         <p>Politica de cookies</p>
       </div>
-  
-      <div class="Preguntas">
+
+      <div class="preguntas">
         <p>Necesitas Ayuda</p>
         <p>Preguntas frecuentes</p>
         <p>Formas de envio</p>
         <p>Formas de pago</p>
-        </div>
-  
+      </div>
+
       <div class="redes">
         <ul>
-          <li><a href="https://www.facebook.com/profile.php?id=100085155483835" target="_blank"><i class="bi bi-facebook"></i></a></li> 
-          <li><a href="https://www.instagram.com/samfit.ar/" target="_blank"><i class="bi bi-instagram"></i></a></li>
-          <li><a href="https://api.whatsapp.com/send/?phone=5491123948728&text&type=phone_number&app_absent=0" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+          <li>
+            <a
+              href="https://www.facebook.com/profile.php?id=100085155483835"
+              target="_blank"
+              ><i class="bi bi-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/samfit.ar/" target="_blank"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://api.whatsapp.com/send/?phone=5491123948728&text&type=phone_number&app_absent=0"
+              target="_blank"
+              ><i class="bi bi-whatsapp"></i
+            ></a>
+          </li>
         </ul>
       </div>
-  
+
       <div class="sucursales">
-          <ul>
+        <ul>
           <li>Sucursales</li>
-          <li><a href="https://goo.gl/maps/cUYeYowxVqUUxA2c8" target="_blank">Lomas de Zamora</a></li>
-          <li><a href="https://goo.gl/maps/HqWWzN3mBgmNzkge7" target="_blank">Catamarca</a></li>
-          <li><a href="https://goo.gl/maps/Fh8sHr8W1evoJN95A" target="_blank">Shopping Catamarca</a></li>
-          <li><a href="https://goo.gl/maps/Z4siKTdKMdyUGWCp8" target="_blank">Cordoba</a></li>
+          <li>
+            <a href="https://goo.gl/maps/cUYeYowxVqUUxA2c8" target="_blank"
+              >Lomas de Zamora</a
+            >
+          </li>
+          <li>
+            <a href="https://goo.gl/maps/HqWWzN3mBgmNzkge7" target="_blank"
+              >Catamarca</a
+            >
+          </li>
+          <li>
+            <a href="https://goo.gl/maps/Fh8sHr8W1evoJN95A" target="_blank"
+              >Shopping Catamarca</a
+            >
+          </li>
+          <li>
+            <a href="https://goo.gl/maps/Z4siKTdKMdyUGWCp8" target="_blank"
+              >Cordoba</a
+            >
+          </li>
         </ul>
       </div>
     </footer>
