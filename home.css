@@ -307,7 +307,9 @@ footer {
     list-style-type: none;
 }
 
-@media (max-width: 350px) {
+/* responsive*/
+
+@media (max-width: 375px) {
         .section-carrusel {
             display: none;
         }
@@ -317,7 +319,7 @@ footer {
             display: block;
             border: 0;
             font-size: 1.25rem;
-            background-color: transparent;
+            background-color: black;
             cursor: pointer;
         }  
     
