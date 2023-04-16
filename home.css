@@ -23,10 +23,18 @@ header {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 20px;
+    
 }
+.prevnext{
+    background-color: #1B1B1B;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+
 .slide {
-    height: 25em;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .logo-container{
