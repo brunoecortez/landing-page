@@ -12,12 +12,9 @@ body{
 /*Card Products*/	
 .product-card{
 	background-color: #fff;
-	border:none;
+	border: none;
 	border-radius: 10px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.thumbnail-image{
 }
 
 .discount{
@@ -157,7 +154,7 @@ body{
 	letter-spacing: 1px;
 }
 
-nav ul{
+.sidebar ul{
 	background: #035397;
 	height: 100%;
 	width: 100%;
@@ -165,142 +162,26 @@ nav ul{
 	padding-left: 10px;
 
 }
-nav ul li{
+.sidebar ul li{
 	line-height: 50px;
 	border-top: 1px solid rgba(255,255,255,0.1);
 }
-nav ul li:last-child{
-	border-bottom: 1px solid rgba(255,255,255,0.05);
-}
-nav ul li a{
+
+.sidebar ul li a{
 	position: relative;
 	color: white;
 	text-decoration: none;
-	font-size: 13px;
+	font-size: 15px;
 	padding-left: 14px;
 	font-weight: 500;
 	display: block;
 	width: 100%;
 	border-left: 3px solid transparent;
 }
-nav ul li.active a{
+.sidebar ul li.active a{
 	color: #FCD900;
 	  background: #035397;
 	  border-left-color: #FCD900;
-}
-  
-.feat-show{
-	transition: all 0.5s;
-}
-  
-nav ul li.active ul{
-   transition: all 0.5s;
-}
-nav ul ul{
-	position: static;
-	display: none; 
-} 
-   
-nav ul.show{
-	display: block;
-	transition: all 0.5s;
-}
-  
-  nav ul ul li{
-	line-height: 42px;
-	border-top: none;
-  }
-  nav ul ul li a{
-	font-size: 12px;
-	color: #e6e6e6;
-	
-  }
-  nav ul li.active ul li a{
-	color: #e6e6e6;
-	background: #1b1b1b;
-	border-left-color: transparent;
-  }
-  
-  nav ul li a span.rotate{
-	transform: translateY(-50%) rotate(-180deg);
-  }
-
-  /*Single Product */
-
-  #prodetails{
-	display: flex;
-	margin-top: 20px;
-  }
-
-
-#prodetails .single-pro-image{
-	width: 40%;
-	margin-right: 50px;
-  }
-
-.small-img-group {
-	display: flex;
-	justify-content: space-between;
-  }
-
-.small-img-col{
-	flex-basis: 24%;
-	cursor: pointer;
-  }
-
-  #prodetails .single-pro-details{
-	width: 50%;
-	padding-top: 30px;
-  }
-
-  #prodetails .single-pro-details h4{
-	padding: 40px 0 20px 0;
-  }
-
-  #prodetails .single-pro-details {
-	padding: 40px 0 20px 0;
-	color: grey;
-  }
-
-  #prodetails .single-pro-details select{
-	display: block;
-	padding: 5px 10px;
-	margin-bottom: 10px;
-  }
-
-  #prodetails .single-pro-details input {
-  	width: 60px;
-  	height: 47px;
-  	padding-left: 10px;
-  	font-size: 16px;
-  	margin-right: 10px;
-	border-radius: 5px;
-	border-color: grey;
-  }
-
-  #prodetails .single-pro-details span {
-  	line-height: 25px;
-  }
-
-  .s-prod-list-price{  
-	font-size: 24px;
-	font-weight: bold;
-	color: rgb(99, 98, 98);
-    text-align: right;
-}
-
-.s-prod-new-price{
-	font-size: 24px;
-	font-weight: bold;
-	color: red;
-    text-align: right;
-}
-.s-prod-old-price{
-	font-size: 20px;
-	font-weight:normal;
-	color: rgb(167, 165, 165);
-    text-decoration:line-through;
-    text-align: right;
-}
+	}
 
 
