@@ -13,10 +13,10 @@ function showTab(n) {
   } else {
     document.getElementById("prevBtn").style.display = "inline";
   }
-  if (n == x.length - 2) {
+  if (n ==  2) {
     document.getElementById("nextBtn").innerHTML = "Resumen";
   } else {
-    document.getElementById("nextBtn").innerHTML = "Next";
+    document.getElementById("nextBtn").innerHTML = "Siguiente";
   }
   if (n == x.length - 1) {
     let nombre = document.getElementById("nombre").value;
@@ -44,9 +44,9 @@ function showTab(n) {
       cantidad +
       " unidades.";
 
-    document.getElementById("nextBtn").innerHTML = "Submit";
+    document.getElementById("nextBtn").innerHTML = "Enviar";
   } else {
-    document.getElementById("nextBtn").innerHTML = "Next";
+    document.getElementById("nextBtn").innerHTML = "Siguiente";
   }
   //...y corre una función que muestra el indicador de paso correcto:
  
@@ -74,7 +74,7 @@ function nextPrev(n) {
 }
 
 function validaForm() {
-  /* ver validate.js */
+  
   // Esta función se ocupa de la validación de los campos del formulario
  
   var x,
@@ -93,6 +93,43 @@ function validaForm() {
       // y configura el estado valid a falso:
       
       valid = false;
+    }
+    else {
+      
+      const nombre = document.getElementById("nombre");
+      const apellido = document.getElementById("apellido");
+      const email = document.getElementById("correo");
+      
+      const parrafo = document.getElementById("aviso");
+      let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+      let aviso = ""
+      if(nombre.value.length <3){
+               
+        aviso = "El nombre es muy corto <br>"
+        
+        valid = false
+        
+      }else
+      if(apellido.value.length <6){
+       
+        aviso = "El apellido es muy corto <br>"
+        
+        valid = false;
+        
+      }else
+      
+      if(!regexEmail.test(email.value)){
+        aviso = "Email no válido <br>"        
+        valid = false;
+       }
+            
+      if(!valid){
+        parrafo.innerHTML = aviso
+      }else{
+        parrafo.innerHTML = ""
+  
+      }
+     
     }
   }
   // Si el valid es verdadero, marca el paso como finalizado y válido:
