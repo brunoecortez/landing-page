@@ -135,24 +135,18 @@ button :hover{
 
 
 .carta1 {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ) 
+  
     ,url("img-nosotros/img-vert1 1080 X 1350.png");
-    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     
 
     
 }
 
 .carta2{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ) 
+ 
     ,url("img-nosotros/img-vert2 1080 X 1350.png");
     display: flex;
     align-items: center;
@@ -160,11 +154,7 @@ button :hover{
 }
 
 .carta3{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ) 
+
     ,url("img-nosotros/img-vert3 1080 X 1350.png");
     display: flex;
     align-items: center;
