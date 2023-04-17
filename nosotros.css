@@ -99,7 +99,7 @@ button :hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ) 
-    ,url("comunidad.img/bannerMejor.png");
+    ,url("img-nosotros/bannerMejor.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -140,7 +140,7 @@ button :hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ) 
-    ,url("comunidad.img/frase.jpeg");
+    ,url("img-nosotros/img-vert1 1080 X 1350.png");
     
     
 
@@ -153,7 +153,7 @@ button :hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ) 
-    ,url("comunidad.img/importados.jpeg");
+    ,url("img-nosotros/img-vert2 1080 X 1350.png");
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -165,7 +165,7 @@ button :hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ) 
-    ,url("comunidad.img/cartaTres.png");
+    ,url("img-nosotros/img-vert3 1080 X 1350.png");
     display: flex;
     align-items: center;
     flex-direction: column;
