@@ -1,3 +1,4 @@
+//Sidebar===========================
 $(document).ready(function () {
     $('.btn-lg').click(function () {
       $(this).toggleClass("click");
@@ -60,8 +61,3 @@ $(".product_list").append(gridItems);
   
 }
 
-
-  
-  
-  
-  

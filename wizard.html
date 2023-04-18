@@ -30,8 +30,9 @@
         </ul>
       </nav>
     </header>
-
-    <form id="regForm" action="">
+    <div class="container">
+      
+    <form id="regForm" class="shadow p-3 mb-5 bg-body rounded" action="">
       <h2>Solicitud de cotización</h2>
 
       <!--Una pestaña por cada paso del formulario -->
@@ -44,16 +45,16 @@
             class="form-control"
             id="nombre"
             rows="3"
-            required
+            
           />
         </div>
         <div class="mb-3">
           <label class="form-label"><b>Apellido:</b></label>
-          <input type="text" class="form-control" id="apellido" required />
+          <input type="text" class="form-control" id="apellido"  />
         </div>
         <div class="mb-3">
           <label class="form-label"><b>Correo:</b></label>
-          <input type="text" class="form-control" id="correo" required />
+          <input type="text" class="form-control" id="correo"  />
         </div>
       </div>
 
@@ -159,6 +160,7 @@
           </button>
         </div>
       </div>
+      <p id="aviso"></p>
 
       <!-- Círculos que indican los pasos del formulario -->
 
@@ -170,6 +172,8 @@
       </div>
       <script src="wizard.js"></script>
     </form>
+    </div>
+
 
     <footer class="footer">
       <div class="terminos">

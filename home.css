@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 body {
     background-color: #fad4a4;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -307,7 +308,9 @@ footer {
     list-style-type: none;
 }
 
-@media (max-width: 350px) {
+/* responsive*/
+
+@media (max-width: 375px) {
         .section-carrusel {
             display: none;
         }
@@ -317,7 +320,7 @@ footer {
             display: block;
             border: 0;
             font-size: 1.25rem;
-            background-color: transparent;
+            background-color: black;
             cursor: pointer;
         }  
     
