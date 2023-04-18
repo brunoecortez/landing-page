@@ -28,7 +28,6 @@ const verClientes = async () => {
         const respuesta = await fetch(url);
         const {results} = await respuesta.json();
         const datos = results [0];
-        // console.log(datos);
         foto.src = datos.picture.medium;
         nombre.textContent = datos.name.first;
         apellido.textContent = datos.name.last;

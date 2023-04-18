@@ -1,52 +1,42 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-body {
-    background-color: hwb(35 60% 10%);
-}
+
 
 
 .container {
     max-width: 1400px;
     margin: auto;
-}  
+}   
 
 
-header {
+/* header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
     background-color: #F99148;
     margin-bottom: 10px;
-}
+} */
 
-.img-logo {
-    width: 5rem
-}
 
-.nav-link {
+
+/* .nav-link {
     display: flex;
     list-style-type: none;
     gap: 1rem;
-}
+} */
 
-.nav-link li a{
+/* .nav-link li a{
     text-decoration: none;
     color: blueviolet;
-}
-.nav-link li a:hover{
+} */
+/* .nav-link li a:hover{
     color: white;
-}
+}  */
 /* clases para abrir el menu hamburguesa y cerrarlo */
-.abrir-menu,
+/* .abrir-menu,
 .cerrar-menu {
     display: none;
-}
-/* ----------------------------------------------------*/
+} */
+/* ---------------------------------------------------- */
 
 .boton {
     margin-top: 5px;
@@ -69,8 +59,8 @@ h2 {
 p {
     font-size: 1em;
 }
-
-button {
+ 
+ button {
     font-size: 1em;
     font-weight: bold;
     padding: 10px 30px;
@@ -164,13 +154,7 @@ button :hover{
 
 
 
-footer {
-    background-color: #506471;
-    display: flex;
-    margin-top: 20px;
-    padding: 1em;
-    justify-content: space-around;
-}
+
 
 .redes li{
     /* background-color: aqua; */
@@ -181,4 +165,4 @@ footer {
 }
 .redes li:hover {
     color: #ECECEC;
-}
+} 
